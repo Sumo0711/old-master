@@ -29,6 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $error_message = "兩次輸入的密碼不一致";
     }
 
+    // 確認手機號格式是否正確
+    if (!preg_match("/^09\d{8}$/", $phone)) {
+        $error_message = "手機號碼格式不正確，請輸入正確的手機號碼";
+    }
+
     // 檢查用戶名、電子郵箱和手機號是否已存在
     $sql_check_existing = "SELECT * FROM user WHERE username='$username' OR  phone='$phone'";
     $result_check_existing = $conn->query($sql_check_existing);
