@@ -13,12 +13,12 @@ if ($conn->connect_error) {
 }
 
 // 獲取POST請求中的order_number
-$orderNumber = $_POST['order_number']; // 將 $serialNumber 改為 $orderNumber
+$orderNumber = $_POST['order_number']; 
 
 // 使用參數化查詢刪除相應商品
-$sql = "DELETE FROM shop_cart WHERE order_number = ?"; // 將 serial_number 改為 order_number
+$sql = "DELETE FROM shop_cart WHERE order_number = ?"; 
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $orderNumber); // 將 $serialNumber 改為 $orderNumber
+$stmt->bind_param("i", $orderNumber); 
 $stmt->execute();
 
 // 關閉連線
