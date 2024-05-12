@@ -53,7 +53,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-// 關閉數據庫連接
 $conn->close();
 ?>
 
