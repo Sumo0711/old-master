@@ -71,7 +71,7 @@ $conn->close();
 </head>
 <body>
     <div class="container">
-        <h2>註冊</h2>
+        <h2>會員註冊</h2>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <input type="text" name="username" id="username" placeholder="用戶名" required><br>
             <input type="password" name="password" id="password" placeholder="密碼" required><br>

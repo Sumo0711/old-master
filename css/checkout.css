@@ -1,1 +1,163 @@
+header {
+    background-color: #7AB2B2; /* 頁頭背景顏色 */
+    color: #EEF7FF; /* 文字顏色 */
+    text-align: center; /* 文字置中 */
+    padding: 1em; /* 上下左右填充 */
+    position: relative; /* 相對定位 */
+    overflow: hidden; /* 溢出隱藏 */
+}
 
+h1 {
+    color: #EEF7FF; /* 標題顏色 */
+    text-align: center; /* 文字置中 */
+    margin: 20px 0; /* 上下間距 */
+}
+
+h2 {
+    color: #4D869C; /* 標題顏色 */
+    text-align: center; /* 文字置中 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CDE8E5;
+    color: #4D869C;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 100px; /* 增加底部填充以避免與 footer 擠在一起 */
+}
+
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #CDE8E5;
+}
+
+.cart-item img {
+    max-width: 80px; /* 調整最大寬度 */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px; /* 將圖片的邊緣修成圓角，可以根據需要調整像素值 */
+}
+
+.cart-item .name {
+    flex: 1;
+}
+
+.cart-item .quantity,
+.cart-item .subtotal {
+    text-align: right;
+}
+
+.total {
+    text-align: right;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #7AB2B2;
+    color: #FFF;
+    border: none;
+    padding: 15px 30px; /* 加大按鈕大小 */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0 auto; /* 移到最下方 */
+    font-size: 16px; /* 加大字體 */
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px; /* 設置按鈕填充 */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px; /* 設置字體大小 */
+}
+
+.delete-button:hover {
+    background-color: #c0392b;
+}
+
+.product-image {
+    width: 200px; /* 調整圖片大小 */
+    height: auto;
+}
+
+thead th,
+tbody td {
+    padding: 12px; /* 根據喜好調整填充值 */
+}
+
+.action-total {
+    text-align: right;
+    padding: 20px;
+}
+
+footer {
+    background-color: #7AB2B2; /* 頁腳背景顏色 */
+    color: #EEF7FF; /* 文字顏色 */
+    text-align: center; /* 文字居中對齊 */
+    padding: 1rem; /* 內邊距 */
+    width: 100%; /* 寬度 100% */
+    margin-top: auto; /* 確保頁腳在頁面底部 */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #7AB2B2; /* 表頭背景顏色 */
+    color: #EEF7FF; /* 表頭文字顏色 */
+}
+
+thead th {
+    padding: 12px; /* 表頭填充 */
+    text-align: left; /* 文字靠左 */
+    border-bottom: 2px solid #CDE8E5; /* 表頭底部邊框 */
+}
+
+tbody tr {
+    border-bottom: 1px solid #EEF7FF; /* 表格行底部邊框 */
+    transition: background-color 0.3s ease; /* 行背景顏色變化過渡 */
+}
+
+tbody tr:hover {
+    background-color: #def8f7; /* 懸停行背景顏色 */
+}
+
+tbody td {
+    padding: 12px; /* 表格數據填充 */
+    text-align: left; /* 文字靠左 */
+}
+
+tbody td.quantity,
+tbody td.subtotal {
+    text-align: right; /* 右對齊數量和小計 */
+}

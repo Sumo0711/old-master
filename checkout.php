@@ -85,7 +85,7 @@
                     $subtotal = $row["price"] * $row["amount"];
                     echo "<td>$" . $subtotal . "</td>";
                     // 操作列包含刪除按鈕
-                    echo "<td><button onclick='deleteItem({$row["order_number"]})'>刪除</button></td>"; // 將 "serial_number" 替換為 "order_number"
+                    echo "<td><button class='delete-button' onclick='deleteItem({$row["order_number"]})'>刪除</button></td>"; 
                     echo "</tr>";
                     // 累加小計到總金額
                     $totalAmount += $subtotal;
@@ -106,7 +106,10 @@
         <div class="total">
             <p>總金額: $<?php echo $totalAmount; ?></p>
         </div>
-        <button class="button">結帳</button>
+            <form action="newebpay.php" method="post">
+            <input type="hidden" name="total_amount" value="<?php echo $totalAmount; ?>">
+            <button type="submit" class="button">結帳</button>
+        </form>
     </div>
 </div>
 

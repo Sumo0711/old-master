@@ -1,0 +1,107 @@
+header {
+    background-color: #7AB2B2; /* 頁頭背景顏色 */
+    color: #EEF7FF; /* 文字顏色 */
+    text-align: center; /* 文字置中 */
+    padding: 1em; /* 上下左右填充 */
+    position: relative; /* 相對定位 */
+    overflow: hidden; /* 溢出隱藏 */
+}
+
+h1 {
+    color: #EEF7FF; /* 標題顏色 */
+    text-align: center; /* 文字置中 */
+    margin: 20px 0; /* 上下間距 */
+}
+
+/* 導覽列樣式 */
+nav {
+    background-color: #CDE8E5; /* 導覽列背景顏色 */
+    padding: 10px 0; /* 上下填充 */
+    text-align: right; /* 將導覽列內容向右對齊 */
+}
+
+nav .nav-block {
+    display: inline-block; /* 讓區塊內容水平排列 */
+    margin-right: 20px; /* 右邊距 */
+}
+
+nav a {
+    color: #4D869C; /* 鏈接顏色 */
+    text-decoration: none; /* 移除下劃線 */
+    margin: 0 10px; /* 左右間距 */
+    padding: 5px 10px; /* 上下左右填充 */
+    border-radius: 5px; /* 圓角 */
+}
+
+nav a:hover {
+    background-color: #EEF7FF; /* 鏈接懸停時背景顏色 */
+}
+
+/* 其他樣式 */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* 字體 */
+    margin: 0; /* 頁面邊距 */
+    padding: 0; /* 內容填充 */
+    background: #CDE8E5;  /* 背景顏色 */
+}
+
+h2 {
+    color: #4D869C; /* 標題顏色 */
+    text-align: center; /* 文字置中 */
+    margin: 20px 0; /* 上下間距 */
+}
+
+section {
+    display: flex; /* 使用彈性盒子布局 */
+    flex-wrap: wrap; /* 自動換行 */
+    justify-content: space-around; /* 水平分佈 */
+    justify-content: flex-start; /* 將元素對齊到左邊 */
+}
+
+.product {
+    width: 300px; /* 產品卡片寬度 */
+    margin-top: 10px; /* 上外邊距 */
+    margin-bottom: 20px; /* 下外邊距 */
+    margin-left: 55px; /* 左外邊距 */
+    margin-right: 55px; /* 右外邊距 */
+    background-color: #FFF; /* 背景顏色 */
+    border-radius: 10px; /* 圓角 */
+    overflow: hidden; /* 溢出隱藏 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* 過渡效果 */
+}
+
+.product:hover {
+    transform: scale(1.05); /* 滑鼠懸停時放大 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* 滑鼠懸停時陰影增加 */
+}
+
+.product img {
+    width: 100%; /* 圖片寬度 */
+    height: auto; /* 圖片高度自動 */
+    transition: filter 0.3s ease-in-out; /* 過渡效果 */
+}
+
+.product:hover img {
+    filter: brightness(80%); /* 滑鼠懸停時調整亮度 */
+}
+
+.product-info {
+    padding: 10px; /* 內邊距 */
+    text-align: center; /* 文字置中 */
+}
+
+.price {
+    font-size: 18px; /* 字體大小 */
+    color: #F97300; /* 產品價格顏色 */
+    margin-top: 10px; /* 上邊距 */
+}
+
+footer {
+    background-color: #7AB2B2; /* 頁腳背景顏色 */
+    color: #EEF7FF; /* 文字顏色 */
+    text-align: center; /* 文字居中對齊 */
+    padding: 1rem; /* 內邊距 */
+    width: 100%; /* 寬度 100% */
+    margin-top: auto; /* 確保頁腳在頁面底部 */
+}
