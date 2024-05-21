@@ -58,6 +58,7 @@ function addToCart($user, $productId, $amount) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>老師傅</title>
     <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link rel="website icon" type="image/png" href="image/logo.png">
 </head>
 <body>
     <header>
