@@ -2,7 +2,7 @@
 
 ## XAMPP 安裝
 
-![image](https://github.com/Sumo0711/old-master/blob/main/directions/%E6%88%AA%E5%9C%96%202024-05-21%20%E6%99%9A%E4%B8%8A11.15.53.png)
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/1.png)
 
 ##### 網址：https://www.apachefriends.org/zh_tw/download.html
 
@@ -14,19 +14,40 @@
 
 ##### 將下載下來的資料夾放進 /Applications/XAMPP/xamppfiles/htdocs
 
-圖片
+##### 並把資料夾名稱改為 old-master
 
 ## 資料庫匯入
 
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/2.png)
+
 ##### 將 XAMPP 啟動
 
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/3.png)
+
 ##### 在瀏覽器打上 http://127.0.0.1/phpmyadmin/
+
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/4.png)
 
 ##### 將檔案中 SQL/old-master.sql 匯入資料庫
 
 ## 成品展示
 
-##### 就可以打開瀏覽器了！ http://127.0.0.1/old-master/index.php
+##### 打開瀏覽器了！ http://127.0.0.1/old-master/index.php
+
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/5.png)
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/6.png)
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/7.png)
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/8.png)
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/9.png)
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/10.png)
+
+##### 內建一個測試帳號
+
+##### 帳號：test
+
+##### 密碼：test
+
+##### 購物車內有放 10 個日式唐揚雞
 
 ## 結帳 API
 
