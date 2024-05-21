@@ -32,7 +32,7 @@
 
 ## 成品展示
 
-##### 打開瀏覽器了！ http://127.0.0.1/old-master/index.php
+##### 打開瀏覽器！ http://127.0.0.1/old-master/index.php
 
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/5.png)
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/6.png)
