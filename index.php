@@ -31,6 +31,7 @@ $user = isset($_SESSION["user_id"]) ? $_SESSION["user_id"] : null;
     <meta charset="utf-8">
     <title>老師傅</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="website icon" type="image/png" href="image/logo.png">
 </head>
 
 <body>

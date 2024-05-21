@@ -1,78 +1,75 @@
 header {
-    background-color: #7AB2B2; /* 頁頭背景顏色 */
-    color: #EEF7FF; /* 文字顏色 */
-    text-align: center; /* 文字置中 */
-    padding: 1em; /* 上下左右填充 */
-    position: relative; /* 相對定位 */
-    overflow: hidden; /* 溢出隱藏 */
+  background-color: #7ab2b2; /* 頁頭背景顏色 */
+  color: #eef7ff; /* 文字顏色 */
+  text-align: center; /* 文字置中 */
+  padding: 1em; /* 上下左右填充 */
+  position: relative; /* 相對定位 */
+  overflow: hidden; /* 溢出隱藏 */
 }
 
 h1 {
-    color: #EEF7FF; /* 標題顏色 */
-    text-align: center; /* 文字置中 */
-    margin: 20px 0; /* 上下間距 */
+  color: #eef7ff; /* 標題顏色 */
+  text-align: center; /* 文字置中 */
+  margin: 20px 0; /* 上下間距 */
 }
 
 h2 {
-    color: #4D869C; /* 標題顏色 */
-    text-align: center; /* 文字置中 */
-    margin: 20px 0; /* 上下間距 */
+  color: #4d869c; /* 標題顏色 */
+  text-align: center; /* 文字置中 */
+  margin: 20px 0; /* 上下間距 */
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* 字體 */
-    margin: 0; /* 頁面邊距 */
-    padding: 0; /* 內容填充 */
-    background: #CDE8E5;  /* 背景顏色 */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* 字體 */
+  margin: 0; /* 頁面邊距 */
+  padding: 0; /* 內容填充 */
+  background: #cde8e5; /* 背景顏色 */
 }
 .container {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 100px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
 }
 input[type="text"],
-input[type="password"]{
-    margin-top: 10px; /* 按鈕上方的間距 */
-    padding: 8px; /* 按鈕內部的填充 */
-    width: 100%; /* 按鈕寬度，調整此值可以讓按鈕並排 */
-    box-sizing: border-box; /* 確保按鈕寬度包含內部填充和邊框 */
-    cursor: pointer; /* 變更鼠標樣式 */
-    border-radius: 5px; /* 為按鈕添加圓角 */
-    margin-left: auto; /* 將左邊邊界設置為自動，將按鈕置中 */
-    margin-right: auto; /* 將右邊邊界設置為自動，將按鈕置中 */
-    border-radius: 5px; /* 為按鈕添加圓角 */
+input[type="password"] {
+  margin-top: 10px; /* 按鈕上方的間距 */
+  padding: 8px; /* 按鈕內部的填充 */
+  width: 100%; /* 按鈕寬度，調整此值可以讓按鈕並排 */
+  box-sizing: border-box; /* 確保按鈕寬度包含內部填充和邊框 */
+  cursor: pointer; /* 變更鼠標樣式 */
+  border-radius: 5px; /* 為按鈕添加圓角 */
+  margin-left: auto; /* 將左邊邊界設置為自動，將按鈕置中 */
+  margin-right: auto; /* 將右邊邊界設置為自動，將按鈕置中 */
+  border-radius: 5px; /* 為按鈕添加圓角 */
 }
 
-
-input[type="submit"], 
+input[type="submit"],
 button {
-    margin-top: 10px; /* 按鈕上方的間距 */
-    padding: 8px; /* 按鈕內部的填充 */
-    width: 48%; /* 按鈕寬度，調整此值可以讓按鈕並排 */
-    box-sizing: border-box; /* 確保按鈕寬度包含內部填充和邊框 */
-    cursor: pointer; /* 變更鼠標樣式 */
-    border-radius: 5px; /* 為按鈕添加圓角 */
-    margin-left: auto; /* 將左邊邊界設置為自動，將按鈕置中 */
-    margin-right: auto; /* 將右邊邊界設置為自動，將按鈕置中 */
-    border-radius: 5px; /* 為按鈕添加圓角 */
+  margin-top: 10px; /* 按鈕上方的間距 */
+  padding: 8px; /* 按鈕內部的填充 */
+  width: 48%; /* 按鈕寬度，調整此值可以讓按鈕並排 */
+  box-sizing: border-box; /* 確保按鈕寬度包含內部填充和邊框 */
+  cursor: pointer; /* 變更鼠標樣式 */
+  border-radius: 5px; /* 為按鈕添加圓角 */
+  margin-left: auto; /* 將左邊邊界設置為自動，將按鈕置中 */
+  margin-right: auto; /* 將右邊邊界設置為自動，將按鈕置中 */
+  border-radius: 5px; /* 為按鈕添加圓角 */
 }
 
 .container {
-    width: 300px; /* 容器寬度 */
-    margin: 0 auto; /* 將容器置中 */
-    text-align: center; /* 文字置中 */
-    margin-top: 100px; /* 將容器上方的間距 */
-    display: flex; /* 將容器轉換為 flex 容器 */
-    justify-content: space-between; /* 將按鈕並排，並在兩側添加等寬的間距 */
+  width: 300px; /* 容器寬度 */
+  margin: 0 auto; /* 將容器置中 */
+  text-align: center; /* 文字置中 */
+  margin-top: 100px; /* 將容器上方的間距 */
+  display: flex; /* 將容器轉換為 flex 容器 */
+  justify-content: space-between; /* 將按鈕並排，並在兩側添加等寬的間距 */
 }
 footer {
-    background-color: #7AB2B2; /* 頁腳背景顏色 */
-    color: #EEF7FF; /* 文字顏色 */
-    text-align: center; /* 文字居中對齊 */
-    padding: 1rem; /* 內邊距 */
-    width: 100%; /* 寬度 100% */
-    margin-top: auto; /* 確保頁腳在頁面底部 */
+  background-color: #7ab2b2; /* 頁腳背景顏色 */
+  color: #eef7ff; /* 文字顏色 */
+  text-align: center; /* 文字居中對齊 */
+  padding: 1rem; /* 內邊距 */
+  width: 100%; /* 寬度 100% */
+  margin-top: auto; /* 確保頁腳在頁面底部 */
 }
-
-  
