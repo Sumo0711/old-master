@@ -71,5 +71,6 @@ footer {
   text-align: center; /* 文字居中對齊 */
   padding: 1rem; /* 內邊距 */
   width: 100%; /* 寬度 100% */
-  margin-top: auto; /* 確保頁腳在頁面底部 */
+  position: fixed; /* 將位置固定 */
+  bottom: 0; /* 距離底部的距離 */
 }
