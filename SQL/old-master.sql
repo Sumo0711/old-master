@@ -21,6 +21,12 @@ SET time_zone = "+00:00";
 -- 資料庫： `old-master`
 --
 
+-- 創建資料庫
+CREATE DATABASE IF NOT EXISTS `old-master` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+
+-- 切換到新建的資料庫
+USE `old-master`;
+
 -- --------------------------------------------------------
 
 --
@@ -33,17 +39,6 @@ CREATE TABLE `product` (
   `price` int(32) NOT NULL,
   `slogan` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- 傾印資料表的資料 `product`
---
-
-INSERT INTO `product` (`p_id`, `name`, `price`, `slogan`) VALUES
-(1, '日式雞排飯', 90, '「炸至金黃，口感酥脆，日式料理的極致享受。」'),
-(2, '鹽水雞肉飯', 80, '「清淡中帶著濃郁的家鄉情懷。」'),
-(3, '酥炸排骨飯', 80, '「酥脆香氣四溢，入口即化的絕妙享受。」'),
-(4, '日式唐揚雞', 50, '「酥脆外皮，嫩滑多汁，日本風味十足。」'),
-(5, '酥炸黃金豆腐', 40, '「外酥內嫩，一口咬下滿溢幸福滋味。」');
 
 -- --------------------------------------------------------
 
@@ -70,13 +65,6 @@ CREATE TABLE `user` (
   `password` varchar(32) NOT NULL,
   `phone` varchar(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- 傾印資料表的資料 `user`
---
-
-INSERT INTO `user` (`u_id`, `username`, `password`, `phone`) VALUES
-(8, 'test', 'test', '0912345678');
 
 -- --------------------------------------------------------
 
@@ -141,19 +129,19 @@ ALTER TABLE `user`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `product`
 --
 ALTER TABLE `product`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `shop_cart`
 --
 ALTER TABLE `shop_cart`
-  MODIFY `order_number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `order_number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `user`
 --
 ALTER TABLE `user`
-  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- 已傾印資料表的限制式
@@ -166,6 +154,38 @@ ALTER TABLE `shop_cart`
   ADD CONSTRAINT `shop_cart_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`u_id`) ON DELETE CASCADE,
   ADD CONSTRAINT `shop_cart_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`p_id`) ON DELETE CASCADE;
 COMMIT;
+
+-- --------------------------------------------------------
+
+--
+-- INSERT 表結構
+--
+
+--
+-- 傾印資料表的資料 `product`
+--
+
+INSERT INTO `product` (`name`, `price`, `slogan`) VALUES
+('日式雞排飯', 90, '「炸至金黃，口感酥脆，日式料理的極致享受。」'),
+('鹽水雞肉飯', 80, '「清淡中帶著濃郁的家鄉情懷。」'),
+('酥炸排骨飯', 80, '「酥脆香氣四溢，入口即化的絕妙享受。」'),
+('日式唐揚雞', 50, '「酥脆外皮，嫩滑多汁，日本風味十足。」'),
+('酥炸黃金豆腐', 40, '「外酥內嫩，一口咬下滿溢幸福滋味。」');
+
+
+--
+-- 傾印資料表的資料 `user`
+--
+
+INSERT INTO `user` (`username`, `password`, `phone`) VALUES
+('test', 'test', '0912345678');
+
+--
+-- 傾印資料表的資料 `shop_cart`
+--
+
+INSERT INTO `shop_cart` (`user_id`, `product_id`, `amount`) VALUES
+('1', '1', '1');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
