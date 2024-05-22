@@ -6,11 +6,11 @@
 
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/1.png)
 
-##### 網址：https://www.apachefriends.org/zh_tw/download.html
+網址：https://www.apachefriends.org/zh_tw/download.html  
 
-##### 選擇適合的作業系統
+選擇適合的作業系統  
 
-##### 這邊我是用 MAC 版最新的 8.2.4
+這邊我是用 MAC 版最新的 8.2.4  
 
 ## 檔案匯入
 
