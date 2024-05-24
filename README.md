@@ -105,7 +105,7 @@ email 可隨便填寫，但後面要是 @gmail.com
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/17.png)
 歷史訂單按復原即可回到目前訂單（防誤觸）
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/18.png)
-總營收會紀錄到如今歷史訂單的總收入
+總營收會紀錄所有歷史訂單的總收入
 
 ## 結帳 API
 
