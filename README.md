@@ -37,11 +37,19 @@
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/5.png)
 按 header 的 老師傅會回到主商品頁面  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/8.png)
-按下商品會跳轉到商品頁面  
-![image](https://github.com/Sumo0711/old-master/blob/main/directions/6.png)
-會員登入邏輯，當使用者沒登入不能查看購物車及下單
+按下商品會跳轉到商品頁面
 
-登入時檢查有沒有該名使用者  
+會員登入邏輯，當使用者沒登入不能查看購物車及下單  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/6.png)
+登入時檢查有沒有該名使用者
+
+內建一個測試帳號
+
+帳號：test
+
+密碼：test
+
+購物車內有放 1 個日式雞排飯  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/7.png)
 會員註冊會從資料庫檢查是否有重複的使用者
 
@@ -61,14 +69,6 @@
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/10.png)
 結帳串接金額至藍新科技的付款頁面
 
-內建一個測試帳號
-
-帳號：test
-
-密碼：test
-
-購物車內有放 1 個日式雞排飯
-
 ## 結帳 API
 
 藍新科技測試區
@@ -87,22 +87,26 @@ email 可隨便填寫，但後面要是 @gmail.com
 
 ## 後台功能展示
 
-開店能把所有商品上架
-
+打開瀏覽器！ http://127.0.0.1/old-master/admin.php
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/12.png)
+開店能把所有商品上架  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/13.png)
 關店把所有商品下架並跳轉關店頁面
 
 從資料庫刪除商品時，使用者購物車內有該項商品也會跟著刪除
-
-每個商品有獨自得完售按鈕，按下之後前台使用者便無法在下訂單
-
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/14.png)
+每個商品有獨自得完售按鈕
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/15.png)
+完售後前台使用者便無法在下訂單  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/16.png)
 餐點管理，能看到現在所有需要出餐的訂單
-
-按下完成訂單後會跑到歷史訂單
-
-歷史訂單按復原即可回到目前訂單（防誤觸）
 
 按 header 的 管理員控制台會回到管理員控制台頁面
 
+按下完成訂單後會跑到歷史訂單  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/17.png)
+歷史訂單按復原即可回到目前訂單（防誤觸）
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/18.png)
 總營收會紀錄到如今歷史訂單的總收入
 
 ## 備註
