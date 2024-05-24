@@ -30,16 +30,36 @@
 
 將檔案中 SQL/old-master.sql 匯入資料庫
 
-## 成品展示
+## 前台功能展示
 
 打開瀏覽器！ http://127.0.0.1/old-master/index.php
 
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/5.png)
-![image](https://github.com/Sumo0711/old-master/blob/main/directions/6.png)
-![image](https://github.com/Sumo0711/old-master/blob/main/directions/7.png)
+按 header 的 老師傅會回到主商品頁面  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/8.png)
+按下商品會跳轉到商品頁面  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/6.png)
+會員登入邏輯，當使用者沒登入不能查看購物車及下單
+
+登入時檢查有沒有該名使用者  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/7.png)
+會員註冊會從資料庫檢查是否有重複的使用者
+
+檢查註冊密碼兩次都要相同
+
+檢查合法的手機號碼  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/9.png)
+每個使用者都有獨立的購物車
+
+購物車會列出商品名稱、商品單價、數量、價格合計與總金額
+
+購物車有刪除單筆功能  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/11.png)
+結帳前會跳出取餐號碼
+
+結帳後商品會從購物車刪除  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/10.png)
+結帳串接金額至藍新科技的付款頁面
 
 內建一個測試帳號
 
@@ -65,41 +85,13 @@ email 可隨便填寫，但後面要是 @gmail.com
 
 勾選兩項同意並送出，會顯示成功付款
 
-## 前台功能展示
-
-按 header 的 老師傅會回到主商品頁面
-
-會員登入邏輯，當使用者沒登入不能查看購物車及下單
-
-登入時檢查有沒有該名使用者
-
-會員註冊會從資料庫檢查是否有重複的使用者
-
-檢查註冊密碼兩次都要相同
-
-檢查合法的手機號碼
-
-每個使用者都有獨立的購物車
-
-購物車會列出商品名稱、商品單價、數量、價格合計與總金額
-
-購物車有刪除單筆功能
-
-結帳前會跳出取餐號碼
-
-結帳後商品會從購物車刪除
-
-結帳串接金額至藍新科技的付款頁面
-
-從資料庫下架商品時，使用者購物車內有該項商品也會跟著刪除
-
-所有資料都會跟資料庫做連動，包含使用者帳號、商品資訊與下單情形
-
 ## 後台功能展示
 
 開店能把所有商品上架
 
 關店把所有商品下架並跳轉關店頁面
+
+從資料庫刪除商品時，使用者購物車內有該項商品也會跟著刪除
 
 每個商品有獨自得完售按鈕，按下之後前台使用者便無法在下訂單
 
