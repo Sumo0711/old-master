@@ -81,7 +81,7 @@ email 可隨便填寫，但後面要是 @gmail.com
 
 勾選兩項同意並送出  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/19.png)
-成功付款！
+付款成功！
 
 ## 後台功能展示
 
