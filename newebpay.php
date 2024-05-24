@@ -1,7 +1,7 @@
 <?php
-$key = "iqK010mzZ8sp3BBQirZRiv1C2hukdPml";
-$iv = "CJrd3wMg3JqchS6P";
-$mid = "MS152078688";
+$key = "kjSGxqGE9f0zVDItAe2M0e3nBgCmfuCj";
+$iv = "Cjs6fgLxkoWuIuiP";
+$mid = "MS152585148";
 $totalAmount = $_POST['total_amount'];
 $data1 = http_build_query(array(
     'MerchantID' => $mid,
@@ -17,7 +17,7 @@ $data1 = http_build_query(array(
     'CREDIT' => '1',
     'LoginType' => '0',
     'InstFlag' => '0',
-    'ItemDesc' => 'test',
+    'ItemDesc' => '電話:0909-244722',
 ));
 
 $edata1 = bin2hex(openssl_encrypt($data1, "AES-256-CBC", $key, OPENSSL_RAW_DATA, $iv));

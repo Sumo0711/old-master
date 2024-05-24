@@ -70,12 +70,18 @@
 結帳後商品會從購物車刪除  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/10.png)
 結帳串接金額至藍新科技的付款頁面
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/19.png)
+成功付款！
 
 ## 結帳 API
 
 藍新科技測試區
 
 網站：https://cwww.newebpay.com/
+
+測試區帳號：oldmaster
+
+測試區密碼：123456aaa
 
 測試卡號：4000-2211-1111-1111
 
