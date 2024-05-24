@@ -39,9 +39,11 @@
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/8.png)
 按下商品會跳轉到商品頁面
 
+可以選擇下單數量
+
 會員登入邏輯，當使用者沒登入不能查看購物車及下單  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/6.png)
-登入時檢查有沒有該名使用者
+登入時檢查有沒有該名使用者，如果沒有跳錯誤訊息
 
 內建一個測試帳號
 
@@ -95,7 +97,7 @@ email 可隨便填寫，但後面要是 @gmail.com
 
 從資料庫刪除商品時，使用者購物車內有該項商品也會跟著刪除
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/14.png)
-每個商品有獨自得完售按鈕
+每個商品都有完售按鈕，可獨立控制商品是否完售
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/15.png)
 完售後前台使用者便無法在下訂單  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/16.png)
