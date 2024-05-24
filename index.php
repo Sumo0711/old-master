@@ -11,7 +11,7 @@ $conn = new mysqli($servername, $username, '', $dbname); // ‘’為密碼，ro
 $conn->set_charset("utf8");
 
 // 查詢資料庫
-$sql = "SELECT name, price FROM product";
+$sql = "SELECT name, price, inventory FROM product";
 $result = $conn->query($sql);
 
 // 獲取資料庫內所有數據
@@ -22,6 +22,20 @@ while ($row = $result->fetch_assoc()) {
 
 // 檢查是否有抓到使用者 ID
 $user = isset($_SESSION["user_id"]) ? $_SESSION["user_id"] : null;
+
+// 檢查庫存是否全部為零，如果是的話就執行跳轉
+$allOutOfStock = true;
+foreach ($productData as $product) {
+    if ($product["inventory"] > 0) {
+        $allOutOfStock = false;
+        break;
+    }
+}
+
+if ($allOutOfStock) {
+    header("Location: close.php");
+    exit; // 確保在跳轉後停止執行後續代碼
+}
 ?>
 
 <!DOCTYPE html>
@@ -58,14 +72,23 @@ $user = isset($_SESSION["user_id"]) ? $_SESSION["user_id"] : null;
         $image = sprintf("image/%02d.png", $i + 1);
         $name = $productData[$i]["name"];
         $price = $productData[$i]["price"];
+        $inventory = $productData[$i]["inventory"];
         $productId = $i + 1; // 使用索引作為產品的ID
+
+        // 判斷商品是否缺貨
+        $class = ($inventory == 0) ? 'out-of-stock' : '';
+        $disabled = ($inventory == 0) ? 'disabled' : '';
     ?>
 
-        <div class="product" data-product-id="<?php echo $productId; ?>">
+        <div class="product <?php echo $class; ?>" data-product-id="<?php echo $productId; ?>">
             <img src="<?php echo $image; ?>" alt="<?php echo $name; ?>">
             <div class="product-info">
                 <h2><?php echo $name; ?></h2>
-                <p class="price">$<?php echo $price; ?></p>
+                <?php if ($inventory == 0): ?>
+                    <p class="price">已售完</p>
+                <?php else: ?>
+                    <p class="price">$<?php echo $price; ?></p>
+                <?php endif; ?>
             </div>
         </div>
 
@@ -75,16 +98,18 @@ $user = isset($_SESSION["user_id"]) ? $_SESSION["user_id"] : null;
 </section>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        // 選擇所有具有 'product' 類別的元素
+        // 選擇所有具有 'product' 類別且未禁用的元素
         document.querySelectorAll('.product').forEach(function (product) {
             // 為每個產品元素添加點擊事件監聽器
-            product.addEventListener('click', function () {
-            // 獲取產品的唯一ID
-                var productId = product.getAttribute('data-product-id');
-        
-                // 構建跳轉到相應網頁的URL，假設每個網頁以 'product_1.php' 命名
-                window.location.href = 'product' + '.php?id=' + + productId;
-            });
+            if (!product.classList.contains('out-of-stock')) {
+                product.addEventListener('click', function () {
+                    // 獲取產品的唯一ID
+                    var productId = product.getAttribute('data-product-id');
+
+                    // 構建跳轉到相應網頁的URL，假設每個網頁以 'product_1.php' 命名
+                    window.location.href = 'product' + '.php?id=' + productId;
+                });
+            }
         });
     });
 </script>

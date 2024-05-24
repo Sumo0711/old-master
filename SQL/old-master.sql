@@ -37,7 +37,8 @@ CREATE TABLE `product` (
   `p_id` int(11) NOT NULL,
   `name` varchar(32) NOT NULL,
   `price` int(32) NOT NULL,
-  `slogan` varchar(32) NOT NULL
+  `slogan` varchar(32) NOT NULL,
+  `inventory` BOOLEAN DEFAULT TRUE 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -64,6 +65,19 @@ CREATE TABLE `user` (
   `username` varchar(32) NOT NULL,
   `password` varchar(32) NOT NULL,
   `phone` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- 資料表結構 `user_order_details`
+--
+CREATE TABLE user_order_details (
+    order_details int(11),
+    username VARCHAR(32),
+    products VARCHAR(32),
+    total int(32),
+    Finish BOOLEAN DEFAULT FALSE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -122,6 +136,12 @@ ALTER TABLE `user`
   ADD UNIQUE KEY `username` (`username`,`phone`);
 
 --
+-- 資料表索引 `user_order_details`
+--
+ALTER TABLE `user_order_details`
+  ADD PRIMARY KEY (`order_details`);
+
+--
 -- 在傾印的資料表使用自動遞增(AUTO_INCREMENT)
 --
 
@@ -142,6 +162,12 @@ ALTER TABLE `shop_cart`
 --
 ALTER TABLE `user`
   MODIFY `u_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+
+--
+-- 使用資料表自動遞增(AUTO_INCREMENT) `user_order_details`
+--
+ALTER TABLE `user_order_details`
+  MODIFY `order_details` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- 已傾印資料表的限制式

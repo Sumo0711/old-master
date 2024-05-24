@@ -1,0 +1,121 @@
+/* order-container 的樣式 */
+.order-container {
+  background-color: #fff; /* 背景顏色 */
+  border-radius: 5px; /* 圓角 */
+  padding: 15px; /* 內邊距 */
+  margin-bottom: 10px; /* 底部間距 */
+  margin-left: 20px; /* 左邊距 */
+  margin-right: 20px; /* 右邊距 */
+}
+
+.order-container form {
+  display: inline-block; /* 表單內容水平排列 */
+}
+
+.order-container form button.nav-button {
+  background-color: #4caf50; /* 按鈕背景顏色 */
+  color: white; /* 文字顏色 */
+  border: none; /* 去除邊框 */
+  padding: 8px 20px; /* 內邊距 */
+  text-decoration: none; /* 移除下劃線 */
+  margin: 4px 2px; /* 外邊距 */
+  cursor: pointer; /* 鼠標指示 */
+  border-radius: 5px; /* 圓角 */
+}
+
+.order-container form button.nav-button:hover {
+  background-color: #45a049; /* 按鈕懸停時背景顏色 */
+}
+
+.order-container form input[type="hidden"] {
+  display: none; /* 隱藏表單中的隱藏字段 */
+}
+
+.order-container form input[type="submit"] {
+  background-color: #4caf50; /* 按鈕背景顏色 */
+  color: white; /* 文字顏色 */
+  border: none; /* 去除邊框 */
+  padding: 8px 20px; /* 內邊距 */
+  text-decoration: none; /* 移除下劃線 */
+  margin: 4px 2px; /* 外邊距 */
+  cursor: pointer; /* 鼠標指示 */
+  border-radius: 5px; /* 圓角 */
+}
+
+.order-container form input[type="submit"]:hover {
+  background-color: #45a049; /* 按鈕懸停時背景顏色 */
+}
+
+/* 已出餐狀態的樣式 */
+.completed-status {
+  margin-top: 10px; /* 上邊距 */
+}
+
+/* 分隔塊樣式 */
+.order-separator {
+  background-color: #fff; /* 白色背景 */
+  height: 20px; /* 高度 */
+  margin-bottom: 10px; /* 底部間距 */
+  margin-left: 30px; /* 左側間距 */
+  margin-right: 30px; /* 右側間距 */
+}
+
+/* header 的樣式 */
+header {
+  background-color: #7ab2b2; /* 頁頭背景顏色 */
+  color: #eef7ff; /* 文字顏色 */
+  text-align: center; /* 文字置中 */
+  padding: 1em; /* 上下左右填充 */
+  position: relative; /* 相對定位 */
+  overflow: hidden; /* 溢出隱藏 */
+}
+
+h1 {
+  color: #eef7ff; /* 標題顏色 */
+  text-align: center; /* 文字置中 */
+  margin: 20px 0; /* 上下間距 */
+}
+
+/* 導覽列的樣式 */
+nav {
+  background-color: #cde8e5; /* 導覽列背景顏色 */
+  padding: 10px 0; /* 上下填充 */
+  text-align: right; /* 文字右對齊 */
+}
+
+nav .nav-block {
+  display: inline-block; /* 內容水平排列 */
+  margin-right: 20px; /* 右邊距 */
+}
+
+nav a,
+.nav-button {
+  color: #4d869c; /* 鏈接顏色 */
+  text-decoration: none; /* 移除下劃線 */
+  margin: 0 10px; /* 左右間距 */
+  padding: 5px 10px; /* 上下左右填充 */
+  border-radius: 5px; /* 圓角 */
+  background-color: transparent; /* 背景顏色透明 */
+  border: none; /* 無邊框 */
+  cursor: pointer; /* 鼠標指示 */
+  font-size: 15px; /* 字體大小 */
+}
+
+nav a:hover,
+.nav-button:hover {
+  background-color: #eef7ff; /* 鏈接懸停時背景顏色 */
+}
+
+/* 其他樣式 */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* 字體 */
+  margin: 0; /* 頁面邊距 */
+  padding: 0; /* 內容填充 */
+  background: #cde8e5; /* 背景顏色 */
+}
+
+h2 {
+  color: #4d869c; /* 標題顏色 */
+  text-align: center; /* 文字置中 */
+  margin: 20px 0; /* 上下間距 */
+}

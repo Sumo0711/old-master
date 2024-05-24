@@ -107,7 +107,7 @@
         <div class="total">
             <p>總金額: $<?php echo $totalAmount; ?></p>
         </div>
-            <form action="newebpay.php" method="post">
+            <form action="user_order_details.php" method="post">
             <input type="hidden" name="total_amount" value="<?php echo $totalAmount; ?>">
             <button type="submit" class="button">結帳</button>
         </form>
