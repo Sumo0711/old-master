@@ -12,23 +12,52 @@
 
 這邊我是用 MAC 版最新的 8.2.4
 
-## 檔案匯入
-
-將下載下來的資料夾放進 /Applications/XAMPP/xamppfiles/htdocs
-
-## 資料庫匯入
-
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/2.png)
 
 將 XAMPP 啟動
 
+## 檔案匯入
+
+將下載下來的資料夾放進 /Applications/XAMPP/xamppfiles/htdocs
+
+## 資料庫
+
+打開瀏覽器！ http://127.0.0.1/phpmyadmin/
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/3.png)
-
-在瀏覽器打上 http://127.0.0.1/phpmyadmin/
-
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/4.png)
+將檔案中 SQL/old-master.sql 匯入資料庫  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/20.png)
+product 表展示
 
-將檔案中 SQL/old-master.sql 匯入資料庫
+用來存商品資訊
+
+其中 p_id 為 PRIMARY KEY AUTO_INCREMENT
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/21.png)
+shop_cart 表展示
+
+用來存使用者下單資訊
+
+其中 user_id 跟 product_id 外部參考 user 表的 u_id 跟 product 表的 p_id
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/22.png)
+user 表展示
+
+用來存使用者資訊
+
+其中 u_id 為 PRIMARY KEY AUTO_INCREMENT  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/23.png)
+product 表展示
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/24.png)
+user_order_details 表展示
+
+將結帳的多筆款項匯整為一欄資料方便後台查看
+
+其中 order_details 為 PRIMARY KEY AUTO_INCREMENT  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/25.png)
+user_cart 檢視表展示
+
+將 product、shop_cart、user 三張表的資訊結合
+
+方便使購物車抓取相關資料
 
 ## 前台功能展示
 
