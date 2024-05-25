@@ -91,9 +91,11 @@ email 可隨便填寫，但後面要是 @gmail.com
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/13.png)
 關店把所有商品下架並跳轉關店頁面
 
-從資料庫刪除商品時，使用者購物車內有該項商品也會跟著刪除
+並刪除所有在購物車尚未結帳的商品  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/14.png)
 每個商品都有完售按鈕，可獨立控制商品是否完售
+
+按下完售後，刪除所有在購物車該項尚未結帳的商品  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/15.png)
 完售後前台使用者便無法在下訂單  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/16.png)
