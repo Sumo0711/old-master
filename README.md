@@ -27,25 +27,25 @@
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/4.png)
 將檔案中 SQL/old-master.sql 匯入資料庫  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/20.png)
+old-master 資料庫總覽  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/21.png)
 product 表展示
 
 用來存商品資訊
 
-其中 p_id 為 PRIMARY KEY AUTO_INCREMENT
-![image](https://github.com/Sumo0711/old-master/blob/main/directions/21.png)
+其中 p_id 為 PRIMARY KEY AUTO_INCREMENT  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/22.png)
 shop_cart 表展示
 
 用來存使用者下單資訊
 
-其中 user_id 跟 product_id 外部參考 user 表的 u_id 跟 product 表的 p_id
-![image](https://github.com/Sumo0711/old-master/blob/main/directions/22.png)
+其中 user_id 跟 product_id 外部參考 user 表的 u_id 跟 product 表的 p_id  
+![image](https://github.com/Sumo0711/old-master/blob/main/directions/23.png)
 user 表展示
 
 用來存使用者資訊
 
 其中 u_id 為 PRIMARY KEY AUTO_INCREMENT  
-![image](https://github.com/Sumo0711/old-master/blob/main/directions/23.png)
-product 表展示
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/24.png)
 user_order_details 表展示
 
