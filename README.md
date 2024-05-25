@@ -94,10 +94,10 @@ email 可隨便填寫，但後面要是 @gmail.com
 並刪除所有在購物車尚未結帳的商品  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/14.png)
 每個商品都有完售按鈕，可獨立控制商品是否完售
-
-按下完售後，刪除所有在購物車該項尚未結帳的商品  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/15.png)
-完售後前台使用者便無法在下訂單  
+完售後前台使用者便無法在下訂單
+
+在購物車內如果有該項商品也會跟著刪除  
 ![image](https://github.com/Sumo0711/old-master/blob/main/directions/16.png)
 餐點管理，能看到現在所有需要出餐的訂單
 
