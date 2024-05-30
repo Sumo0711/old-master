@@ -32,26 +32,32 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="image/png" href="image/logo.png">
     <title>老師傅</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
+			background-image: url("image/006.png") ;
+			background-repeat: no-repeat;
+			background-size: cover;
         }
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+			border: 2px solid #6b8e23
+			
         }
         .message {
-            padding: 20px;
-            background-color: white;
+            padding: 40px;
+            background-color: #cde8e5;
             border: 1px solid #ccc;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+			border-radius: 15px; /* 圆角 */
         }
     </style>
 </head>
@@ -59,7 +65,7 @@ $conn->close();
     <div class="container">
         <div class="message">
             <?php if (isset($closed) && $closed): ?>
-                <h1>店家已打烊</h1>
+                <h1>店家已經打烊囉</h1>
             <?php endif; ?>
         </div>
     </div>
