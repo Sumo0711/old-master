@@ -3,7 +3,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-image: url("image/close.png");
+  background-image: url("../image/close.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,12 +12,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  border: 2px solid #6b8e23;
 }
 .message {
   padding: 40px;
   background-color: #cde8e5;
   border: 1px solid #ccc;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 15px; /* 圆角 */
+  border-radius: 15px; /* 圓角 */
 }
