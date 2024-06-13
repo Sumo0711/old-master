@@ -34,8 +34,8 @@ while ($row = $result->fetch_assoc()) {
     </header>
     <nav>
         <div class="nav-block">
-            <a href="open_store.php">開店</a>
-            <a href="close_store.php">關店</a>
+            <a href="admin_open_store.php">開店</a>
+            <a href="admin_close_store.php">關店</a>
             <a href="admin_order_control.php">餐點管理</a>
             <a href="admin_income.php">總營收</a>
         </div>
